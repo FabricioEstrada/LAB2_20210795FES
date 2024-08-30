@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego</title>
+</head>
+<body>
+<h1>Juego del Bingo</h1>
+<p> Tarjeta número <span th:text="${numero_tar}"></span>:</p>
+<table>
+    <div th:each="valor : ${tarjeta1}">
+        <div th:each="valor_i : ${valor}">
+            <div th:text="${valor_i}"></div>
+        </div>
+        <br>
+    </div>
+
+</table>
+</body>
+</html>
